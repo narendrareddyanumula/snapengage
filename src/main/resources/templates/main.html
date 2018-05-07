@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SnapEngage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<h1>SnapEngage test</h1>
+	<table th:if="${not #lists.isEmpty(entries)}" class="table table-striped">
+		<tr>
+			<th>#</th>
+			<th>widgetId</th>
+			<th>url</th>
+			<th>snapshotImageUrl</th>
+			<th>type</th>
+			<th>requestedBy</th>
+			<th>description</th>
+			<th>createdAtDate</th>
+			<th>createdAtSeconds</th>
+			<th>createdAtMilliseconds</th>
+			<th>proactiveChat</th>
+			<th>pageUrl</th>
+			<th>referrerUrl</th>
+			<th>entryUrl</th>
+			<th>ipAddress</th>
+			<th>userAgent</th>
+			<th>browser</th>
+			<th>os</th>
+			<th>countryCode</th>
+			<th>country</th>
+			<th>region</th>
+			<th>city</th>
+			<th>latitude</th>
+			<th>longitude</th>
+			<th>sourceId</th>
+			<th>chatWaittime</th>
+			<th>chatDuration</th>
+			<th>languageCode</th>
+		</tr>
+		<tr th:each="entry : ${entries}">
+			<td th:text="${entry.id}"></td>
+			<td th:text="${entry.widgetId}"></td>
+			<td th:text="${entry.url}"></td>
+			<td th:text="${entry.snapshotImageUrl}"></td>
+			<td th:text="${entry.type}"></td>
+			<td th:text="${entry.requestedBy}"></td>
+			<td th:text="${entry.description}"></td>
+			<td th:text="${entry.createdAtDate}"></td>
+			<td th:text="${entry.createdAtSeconds}"></td>
+			<td th:text="${entry.createdAtMilliseconds}"></td>
+			<td th:text="${entry.proactiveChat}"></td>
+			<td th:text="${entry.pageUrl}"></td>
+			<td th:text="${entry.referrerUrl}"></td>
+			<td th:text="${entry.entryUrl}"></td>
+			<td th:text="${entry.ipAddress}"></td>
+			<td th:text="${entry.userAgent}"></td>
+			<td th:text="${entry.browser}"></td>
+			<td th:text="${entry.os}"></td>
+			<td th:text="${entry.countryCode}"></td>
+			<td th:text="${entry.country}"></td>
+			<td th:text="${entry.region}"></td>
+			<td th:text="${entry.city}"></td>
+			<td th:text="${entry.latitude}"></td>
+			<td th:text="${entry.longitude}"></td>
+			<td th:text="${entry.sourceId}"></td>
+			<td th:text="${entry.chatWaittime}"></td>
+			<td th:text="${entry.chatDuration}"></td>
+			<td th:text="${entry.languageCode}"></td>
+		</tr>
+	</table>
+</body>
+</html>
