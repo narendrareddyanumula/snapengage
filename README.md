@@ -10,8 +10,6 @@ Using the data you store, visualize or analyze it in some way you feel is intere
 Using the provided JSON data, visualize the information in an interesting and/or useful way. A working system is preferable but we're also interested in seeing your design approach, what tools and frameworks you used, and how you present the data to the user. When you are finished please provide us with a link to the source code and a live demo page.
 
 
-http://developer.snapengage.com/post-api/post-api/
-
 ###Technologies, Frameworks, and Libraries.
 *Spring Boot  to make it easy to create Spring-powered, production-grade applications and services with minimum fuss.
 *spring MVC to separate models-views-controllers.
